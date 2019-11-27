@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="name">
+        <h2><i>Test Your  Intelligence</i></h2>
+    </div>
+    <section class="quiz">
+        <form class="quiz-form">
+            <p>What is the full meaning of USA</p>
+            <input id="textbox" type="text" name="question1">
+
+            <p>How many legs does a reptile have</p> 
+            <input id="multi" type="radio" name="question2" style="color: white;" value="2">2 <br> 
+            <input id="multi" type="radio" name="question2" value="4"> 4 <br>
+            <input id="multi" type="radio" name="question2" value="none"> none <br>
+
+            <p>How many continents are in the world?</p>
+            <input id="multi" type="radio" name="question3" value="3"> 3 <br>
+            <input id="multi" type="radio" name="question3" value="6"> 6 <br>
+            <input id="multi" type="radio" name="question3" value="7"> 7 <br>
+
+            <p>Who is the president of the united states</p>
+            <input id="multi" type="radio" name="question4" value="Donald Trump"> Donald Trump <br>
+            <input id="multi" type="radio" name="question4" value="Muhammed Buhari"> Muhammed Buhari <br>
+            <input id="multi" type="radio" name="question4" value="Bill Gates"> Bill Gates <br><br>
+            <button class="btn" type="submit" value="Submit Quiz" onclick="check();"> submit</button>
+        </form>
+
+        <div id="after-submit">
+                <p id="number-correct">Good Job</p>
+            </div>
+    </section>
+
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
