@@ -16,7 +16,27 @@ function check () {
     if (question3 == "Donald Trump") {
         correct++
     }
-    document.getElementById("submit").style.visibility = "visible";
-    document.getElementById("correct").innerHTML = "You got " + correct + " correct";
+
+    let messages = ["Great Job!", "That's Okay, but can be better", "You really need to do better"];
+    let range;
+
+        if (correct < 1) {
+            range = 2;
+        }
+        if (correct > 0 && correct < 3) {
+            range = 1;
+        }
+        if (correct > 3) {
+            range = 0;
+        }
+        
+
+
+   document.getElementById("after-submit").style.visibility = "visible";
+
+   document.getElementById("message").innerHTML = messages[range]
+    document.getElementById("num-correct").innerHTML = "You got " + correct + " correct";
+
+
 
 } 

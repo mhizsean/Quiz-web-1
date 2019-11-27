@@ -37,7 +37,11 @@ body {
     color: white;
 }
 
+input {
+    margin: 10px 20px;
+}
 .btn {
+    margin-left:120px;
     background: transparent;
     color: white;
     cursor: pointer;
@@ -45,16 +49,14 @@ body {
     width: 150px;
     font-size: 20px;
     text-transform: uppercase;
-
 }
 
 .btn:hover {
     background: white;
     color: black;
+    border: 1px solid transparent;
 
 }
 
-#after-submit {
-    visibility: hidden;
-}
+
 
