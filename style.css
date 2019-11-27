@@ -54,3 +54,7 @@ body {
 
 }
 
+#after-submit {
+    visibility: hidden;
+}
+
