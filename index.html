@@ -8,6 +8,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="nav-main">
+        <div class="logo">
+            <h2><i>QUIZ</i></h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Quiz Category</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+    </div>
     <div class="name">
         <h2><i>Test Your  Intelligence</i></h2>
     </div>
@@ -29,10 +41,10 @@
             <input id="multi" type="radio" name="question3" value="Donald Trump"> Donald Trump <br>
             <input id="multi" type="radio" name="question3" value="Muhammed Buhari"> Muhammed Buhari <br>
             <input id="multi" type="radio" name="question3" value="Bill Gates"> Bill Gates <br><br>
-            <button class="btn" type="submit" value="Submit Quiz" onclick="check()"> submit</button>
+            <button class="btn" type="submit" value="Submit Quiz" onclick="check();"> submit</button>
         </form>
 
-        <div id="after-submit">
+        <div >
             <p id="message"></p>
             <p id="num-correct"></p>
         </div>

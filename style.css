@@ -11,6 +11,35 @@ body {
     background-size: cover;
 }
 
+.nav-main {
+    background: black;
+    color: white;
+    height:60px;
+}
+
+
+.nav-main ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.nav-main ul li {
+    list-style: none;
+}
+
+.nav-main ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bolder;
+    transition: all 0.5s linear;
+}
+
+.nav-main ul li a:hover {
+    color: rgb(170, 124, 223);
+}
 .name {
     text-align: center;
     color: white;

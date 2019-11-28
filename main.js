@@ -17,24 +17,23 @@ function check () {
         correct++
     }
 
-    let messages = ["Great Job!", "That's Okay, but can be better", "You really need to do better"];
-    let range;
+    let alerts = ["Great Job!", "That's Okay, but can be better", "You really need to do better"];
+    let scoreRange;
 
         if (correct < 1) {
-            range = 2;
+            scoreRange = 2;
         }
         if (correct > 0 && correct < 3) {
-            range = 1;
+            scoreRange = 1;
         }
         if (correct > 3) {
-            range = 0;
+            scoreRange = 0;
         }
         
 
 
-   document.getElementById("after-submit").style.visibility = "visible";
 
-   document.getElementById("message").innerHTML = messages[range]
+   document.getElementById("message").innerHTML = alerts[scoreRange]
     document.getElementById("num-correct").innerHTML = "You got " + correct + " correct";
 
 
